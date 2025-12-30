@@ -129,7 +129,7 @@ public class TreeBreakListener implements Listener {
         ItemMeta meta = tool.getItemMeta();
         if (!(meta instanceof Damageable)) return;
         Damageable damageable = (Damageable) meta;
-        int unbreakingLevel = tool.getEnchantmentLevel(Enchantment.UNBREAKING);
+        int unbreakingLevel = tool.getEnchantmentLevel(Enchantment.DURABILITY); // Corrected this line
         if (unbreakingLevel > 0) {
             double chance = 1.0 / (unbreakingLevel + 1);
             if (Math.random() > chance) return;
