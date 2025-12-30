@@ -1,0 +1,11 @@
+# Whether the player must be using an axe
+require-axe: true
+
+# Whether the player must be sneaking to activate
+require-sneak: false
+
+# Apply durability damage per block broken
+apply-durability: true
+
+# Maximum number of blocks to break at once
+max-blocks: 256
